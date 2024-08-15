@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* colors */
+.c-white {
+    color: white;
+}
+
+/* paddings */
+.p-progres {
+    padding: 4px 6px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.icon {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.hero-title, .total_visitors {
+    display: inline;
+    font-family: "Montserrat";
+    color: #333;
+    background-color: rgba(0, 0, 0, .04);
+    padding: 5px 10px;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+}
+
+.line {
+    margin: 17px 0;
+    border-bottom: #000 solid 0.3px;
+} 
+
+/* ---------------- */
+/* SIDEBAR STYLE */
+/* ---------------- */
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar .profile {
+    text-align: center;
+}
+
+.sidebar .profile img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    width: 100%;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #555;
+}
+
+.sidebar footer {
+    font-size: 11px;
+    position: absolute;
+    bottom: 19px;
+}
+/* ------------------ */
+/* CONTENT STYLE */
+/* ------------------ */
+
+.content {
+    flex: 1;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* ---------------------*/
+/*          HOME          */
+/* ------------------- */
+.home{
+	width: 100%;
+    min-height: 100vh;
+	clear: both;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.home .home_content{
+	display: flex;
+	align-items: center;
+}
+.home .avatar{
+	min-width: 300px;
+	min-height: 300px;
+	position: relative;
+	border-radius: 100%;
+}
+.home .avatar[data-type="wave"] .image {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;  
+    right: 0px;
+    background-image: url("{{ asset('assets/images/example.jpg') }}");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: morph 9s ease-in-out infinite;
+    background-blend-mode: multiply;
+    -webkit-box-shadow: inset 0px 0px 0px 12px rgba(255,255,255,.3);
+    -moz-box-shadow: inset 0px 0px 0px 12px rgba(255,255,255,.3);
+    box-shadow: inset 0px 0px 0px 12px rgba(255,255,255,.3);
+}
+@keyframes morph {
+	    0% {
+		    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+	}
+	    50% {
+		    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+	}
+	    100% {
+		    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+	}
+}
+
+.home .details{
+	margin-left: 80px;
+}
+.home .details .name{
+	font-size: 55px;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-bottom: 14px;
+}
+.home .details .name span {
+    color: brown;
+}
+.home .details .street{
+	font-family: "Montserrat";
+	font-weight: 500;
+	max-width: 450px;
+	margin-bottom: 25px;
+}
+.home .social{
+	width: 100%;
+	float: left;
+}
+.home .social ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.home .social ul li{
+	margin: 0px 8px 0px 0px;
+	display: inline-block;
+}
+.home .social ul li:last-child{
+	margin-right: 0px;
+}
+.home .social ul li a{
+	color: #000;
+	font-size: 20px;
+	-webkit-transition: all .3s ease;
+	    -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	        -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.home .social ul li a:hover{
+	color: #000;
+}
+
+
+/* -------------- */
+/*     ABOUT      */
+/* -------------- */
+.about {
+    padding: 20px;
+} .about-content-wrapper {
+    margin: 27px 0px;
+} .about-content-wrapper .bx-sizing {
+    margin  : 0px 20px;
+}
+
+.primary-section .profile {   
+    margin: 20px 0px;
+    max-width: 867px;
+    max-height: 400px;
+} .primary-section .profile .image {
+    width: 867px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+} .primary-section .my-name {
+    font-size: 24px;
+}
+
+.introduction-wrapper .introduction {
+    text-indent: 6px;
+}
+
+.addition-wrapper {
+    display: flex;
+    justify-content: space-between;
+} .addition-wrapper .addition-left, .addition-right {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-wrapper {
+    display: flex;
+    gap: 24px;
+    list-style-type: circle;
+} .skill-wrapper .programming-skill {
+    width: 40%;
+} .skill-wrapper .language-skill {
+    width: 40%;
+}  .programming-skill .title, .language-skill .title {
+    font-size: 28px;
+    font-weight: 600;
+} .skill-wrapper .skill {
+    width: 100%;
+    margin: 8px 0px;
+} .programming-skill .programming-skill-wrapper .skill .progres-bar, .language-skill .language-skill-wrapper .skill .progres-bar {
+    max-width: 100%;
+    border: .1px solid black;
+} .skill .progres-bar .php-progres {
+    width: 70%;
+    background-color: #444;
+} .skill .progres-bar .js-progres {
+    width: 30%;
+    background-color: #444;
+} .skill .progres-bar .english-progres {
+    width: 10%;
+    background-color: #444;
+} 
+
+
+/* -------------- */
+/*   PORTFOLIO */
+/* -------------- */
+.portfolio {
+    padding: 20px;
+}
+
+
+/* -------------- */
+/*   CONTACT   */
+/* -------------- */
+.contact {
+    padding: 20px;
+}
+.contact-content-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    margin: 43px 0px;
+    gap: 13px;
+	display: flex;
+}
+.address-detail .title{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.address-detail ul li {
+    margin: 0px 0px 7px 12px;
+}
