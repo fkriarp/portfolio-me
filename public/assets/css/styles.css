@@ -322,7 +322,7 @@ body {
 }
 .gallery {
     display: flex;
-    gap: 24px;
+    gap: 28px;
     flex-wrap: wrap;
 }
 .card {
@@ -367,6 +367,9 @@ body {
     background-color: #0056b3;
     text-decoration: underline;
     transform: scale(1.05);
+}
+.created {
+    margin: 20px 0px;
 }
 
 

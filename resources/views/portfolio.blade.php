@@ -8,14 +8,17 @@
             <div class="gallery">
               @foreach ($posts as $post)
               <div class="card">
-                <img src="assets/images/<?= $post['image'] ?>" class="card-img-top" alt="...">
+                <img src="assets/images/<?= $post->img ?>" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">
-                    <?= $post['title'] ?>
+                    <?= $post->title ?>
                   </h5>
-                  <hr>
-                  <p class="card-text"><?= $post['body'] ?></p>
-                  <a href="<?= $post['link'] ?>" class="btn btn-primary" target="_blank">Kunjungi website</a>
+                  <div class="line"></div>
+                  <p class="card-text"><?= $post->description ?></p>
+                  <div class="created">{{  $post->created_at->diffForHumans() }}</div>
+                  <div class="visit-website">
+                    <a href="<?= $post->link ?>" class="btn btn-primary" target="_blank">Kunjungi website</a>
+                  </div>
                 </div>
               </div>
               @endforeach

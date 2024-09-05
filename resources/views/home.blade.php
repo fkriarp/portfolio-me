@@ -7,7 +7,7 @@
             </div>
             <div class="details">
                 <div class="name">Fikri Akbar <br> Pratama <span>;</span></div>
-                <p class="street">Welcome! I am Fikri Akbar Pratama, an aspiring Software Developer. Currently, I am learning everything about web development, from front-end to back-end.</p>
+                <p class="street">Selamat datang! Saya Fikri Akbar Pratama, seorang calon Pengembang Perangkat Lunak. Saat ini, saya sedang mempelajari segala hal tentang pengembangan web, dari front-end hingga back-end.</p>
                 <div class="social">
                     <ul>
                         <li><a href="https://github.com/FikrieAkbarPratama" target="_blank" rel="noopener noreferrer" title="Github"><i class="fa-brands fa-github"></i></a></li>

@@ -12,7 +12,7 @@
                 </div>
                 <div class="line"></div>
                 <div class="introduction-wrapper  bx-sizing">
-                    <div class="introduction">Welcome to my portfolio website! I am Fikri Akbar Pratama, a student at SMK Wikrama, majoring in Software and Game Development (PPLG). Currently, I am studying with a focus on website creation. Through this portfolio, I would like to share my work and projects that I have completed during my studies.</div>
+                    <div class="introduction">Selamat datang di situs web portofolio saya! Saya Fikri Akbar Pratama, seorang siswa di SMK Wikrama, jurusan Pengembangan Perangkat Lunak dan Game (PPLG). Saat ini, saya sedang belajar dengan fokus pada pembuatan situs web. Melalui portofolio ini, saya ingin membagikan karya dan proyek yang telah saya selesaikan selama belajar.</div>
                 </div>
                 <div class="line"></div>
                 <div class="addition-wrapper  bx-sizing">

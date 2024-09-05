@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\DetailPortfolio;
+use App\Models\Posts;
 
 class PageController extends Controller
 {
@@ -15,7 +15,7 @@ class PageController extends Controller
         return view("about", ["title" => "About"]);
     }
     public function portfolio(){
-        return view("portfolio", ["title" => "Portfolio", "posts" => DetailPortfolio::all()]);
+        return view("portfolio", ["title" => "Portfolio", "posts" => Posts::all()]);
     }
     public function contact(){
         return view("contact", ["title" => "Contact"]);
