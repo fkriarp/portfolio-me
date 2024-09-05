@@ -1,9 +1,6 @@
-@extends('master')
-@section('content')
+<x-layout>
+<x-slot:title>{{ $title }}</x-slot:title>
 <section class="home">
-        <div class="total_visitors">
-            
-        </div>
         <div class="home_content">
             <div class="avatar" data-type="wave">
                 <div class="image" style="background-image: url('../assets/images/example.jpg');"></div>
@@ -22,4 +19,4 @@
             </div>
         </div>
 </section>
-@endsection
+</x-layout>

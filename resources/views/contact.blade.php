@@ -1,5 +1,5 @@
-@extends('master')
-@section('content')
+<x-layout>
+    <x-slot:title>{{ $title }}</x-slot:title>    
 <section  class="contact">
         <div class="hero-title">contact</div>
         <div class="contact-content-wrapper">
@@ -19,4 +19,4 @@
             </div>
         </div>
 </section>
-@endsection
+</x-layout>

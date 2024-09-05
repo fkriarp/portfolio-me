@@ -10,13 +10,21 @@
     color: white;
 }
 
+/* background-colors */
+.bg-grey {
+    background-color: #555;
+}
+.bg-default {
+    background-color: #333;
+}
+
 /* paddings */
 .p-progres {
     padding: 4px 6px;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     display: flex;
     height: 100vh;
     overflow: hidden;
@@ -32,11 +40,12 @@ body {
     width: 100%;
 }
 
-.hero-title, .total_visitors {
+.hero-title,
+.total_visitors {
     display: inline;
     font-family: "Montserrat";
     color: #333;
-    background-color: rgba(0, 0, 0, .04);
+    background-color: rgba(0, 0, 0, 0.04);
     padding: 5px 10px;
     font-weight: 600;
     font-size: 13px;
@@ -47,7 +56,7 @@ body {
 .line {
     margin: 17px 0;
     border-bottom: #000 solid 0.3px;
-} 
+}
 
 /* ---------------- */
 /* SIDEBAR STYLE */
@@ -117,30 +126,30 @@ body {
 /* ---------------------*/
 /*          HOME          */
 /* ------------------- */
-.home{
-	width: 100%;
+.home {
+    width: 100%;
     min-height: 100vh;
-	clear: both;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
+    clear: both;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
-.home .home_content{
-	display: flex;
-	align-items: center;
+.home .home_content {
+    display: flex;
+    align-items: center;
 }
-.home .avatar{
-	min-width: 300px;
-	min-height: 300px;
-	position: relative;
-	border-radius: 100%;
+.home .avatar {
+    min-width: 300px;
+    min-height: 300px;
+    position: relative;
+    border-radius: 100%;
 }
 .home .avatar[data-type="wave"] .image {
     position: absolute;
     top: 0px;
     bottom: 0px;
-    left: 0px;  
+    left: 0px;
     right: 0px;
     background-image: url("{{ asset('assets/images/example.jpg') }}");
     background-repeat: no-repeat;
@@ -148,91 +157,94 @@ body {
     background-size: cover;
     animation: morph 9s ease-in-out infinite;
     background-blend-mode: multiply;
-    -webkit-box-shadow: inset 0px 0px 0px 12px rgba(255,255,255,.3);
-    -moz-box-shadow: inset 0px 0px 0px 12px rgba(255,255,255,.3);
-    box-shadow: inset 0px 0px 0px 12px rgba(255,255,255,.3);
+    -webkit-box-shadow: inset 0px 0px 0px 12px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: inset 0px 0px 0px 12px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 0px 0px 12px rgba(255, 255, 255, 0.3);
 }
 @keyframes morph {
-	    0% {
-		    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-	}
-	    50% {
-		    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-	}
-	    100% {
-		    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-	}
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
 }
 
-.home .details{
-	margin-left: 80px;
+.home .details {
+    margin-left: 80px;
 }
-.home .details .name{
-	font-size: 55px;
-	font-weight: 800;
-	text-transform: uppercase;
-	margin-bottom: 14px;
+.home .details .name {
+    font-size: 55px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 14px;
 }
 .home .details .name span {
     color: brown;
 }
-.home .details .street{
-	font-family: "Montserrat";
-	font-weight: 500;
-	max-width: 450px;
-	margin-bottom: 25px;
+.home .details .street {
+    font-family: "Montserrat";
+    font-weight: 300;
+    max-width: 450px;
+    margin-bottom: 25px;
 }
-.home .social{
-	width: 100%;
-	float: left;
+.home .social {
+    width: 100%;
+    float: left;
 }
-.home .social ul{
-	margin: 0px;
-	list-style-type: none;
+.home .social ul {
+    margin: 0px;
+    list-style-type: none;
 }
-.home .social ul li{
-	margin: 0px 8px 0px 0px;
-	display: inline-block;
+.home .social ul li {
+    margin: 0px 8px 0px 0px;
+    display: inline-block;
 }
-.home .social ul li:last-child{
-	margin-right: 0px;
+.home .social ul li:last-child {
+    margin-right: 0px;
 }
-.home .social ul li a{
-	color: #000;
-	font-size: 20px;
-	-webkit-transition: all .3s ease;
-	    -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	        -o-transition: all .3s ease;
-	        transition: all .3s ease;
+.home .social ul li a {
+    color: #000;
+    font-size: 20px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
-.home .social ul li a:hover{
-	color: #000;
+.home .social ul li a:hover {
+    color: #000;
 }
-
 
 /* -------------- */
 /*     ABOUT      */
 /* -------------- */
 .about {
     padding: 20px;
-} .about-content-wrapper {
+}
+.about-content-wrapper {
     margin: 27px 0px;
-} .about-content-wrapper .bx-sizing {
-    margin  : 0px 20px;
+}
+.about-content-wrapper .bx-sizing {
+    margin: 0px 20px;
 }
 
-.primary-section .profile {   
+.primary-section .profile {
     margin: 20px 0px;
     max-width: 867px;
     max-height: 400px;
-} .primary-section .profile .image {
+}
+.primary-section .profile .image {
     width: 867px;
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
-} .primary-section .my-name {
+}
+.primary-section .my-name {
     font-size: 24px;
 }
 
@@ -243,7 +255,9 @@ body {
 .addition-wrapper {
     display: flex;
     justify-content: space-between;
-} .addition-wrapper .addition-left, .addition-right {
+}
+.addition-wrapper .addition-left,
+.addition-right {
     width: 40%;
     display: flex;
     justify-content: space-between;
@@ -253,36 +267,106 @@ body {
     display: flex;
     gap: 24px;
     list-style-type: circle;
-} .skill-wrapper .programming-skill {
+}
+.skill-wrapper .programming-skill {
     width: 40%;
-} .skill-wrapper .language-skill {
+}
+.skill-wrapper .language-skill {
     width: 40%;
-}  .programming-skill .title, .language-skill .title {
+}
+.programming-skill .title,
+.language-skill .title {
     font-size: 28px;
     font-weight: 600;
-} .skill-wrapper .skill {
+}
+.skill-wrapper .skill {
     width: 100%;
     margin: 8px 0px;
-} .programming-skill .programming-skill-wrapper .skill .progres-bar, .language-skill .language-skill-wrapper .skill .progres-bar {
+}
+.programming-skill .programming-skill-wrapper .skill .progres-bar,
+.language-skill .language-skill-wrapper .skill .progres-bar {
     max-width: 100%;
-    border: .1px solid black;
-} .skill .progres-bar .php-progres {
+    border: 0.1px solid black;
+}
+.skill .progres-bar .php-progres {
     width: 70%;
     background-color: #444;
-} .skill .progres-bar .js-progres {
+}
+.skill .progres-bar .js-progres {
     width: 30%;
     background-color: #444;
-} .skill .progres-bar .english-progres {
+}
+.skill .progres-bar .english-progres {
     width: 10%;
     background-color: #444;
-} 
-
+}
 
 /* -------------- */
 /*   PORTFOLIO */
 /* -------------- */
 .portfolio {
     padding: 20px;
+}
+.portfolio-content {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.section-header {
+    color: #996633;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+.gallery {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.card {
+    width: 297px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
+}
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 150px;
+    object-fit: cover;
+}
+.card-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+}
+.card-body {
+    padding: 20px
+}
+.card-text {
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    margin-bottom: 1rem;
+}
+.btn-primary {
+    padding: 8px 12px;
+    color: aliceblue;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    text-decoration: underline;
+    transform: scale(1.05);
 }
 
 
@@ -297,9 +381,9 @@ body {
     min-height: 100vh;
     margin: 43px 0px;
     gap: 13px;
-	display: flex;
+    display: flex;
 }
-.address-detail .title{
+.address-detail .title {
     font-weight: 600;
     margin-bottom: 20px;
 }
